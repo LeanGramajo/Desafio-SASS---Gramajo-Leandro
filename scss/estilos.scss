@@ -1,262 +1,264 @@
+$color-contacto: #0096cd;
+
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body{
-    background-image: linear-gradient(to right, #000000, #312736, #395375, #0089a5, #00bfac);
+  background-image: linear-gradient(to right, #000000, #312736, #395375, #0089a5, #00bfac);
 }
 
 .grid-container-galeria{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows:0.1fr 2fr 0.1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header header header"
-      "main main main"
-      "footer footer footer";
-}
-
-.grid-container {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.2fr 1fr 0.2fr; 
+  grid-template-rows:0.1fr 2fr 0.1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "header header header"
     "main main main"
     "footer footer footer";
+}
+
+.grid-container {
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr; 
+grid-template-rows: 0.2fr 1fr 0.2fr; 
+gap: 0px 0px; 
+grid-template-areas: 
+  "header header header"
+  "main main main"
+  "footer footer footer";
 
 }
 
 /* HEADER */
 
 header{
-    background-image: linear-gradient(to right, #1e5ebf, #007dcf, #0096cd, #00acbe, #00bfac);
-    grid-area: header;
+  background-image: linear-gradient(to right, #1e5ebf, #007dcf, #0096cd, #00acbe, #00bfac);
+  grid-area: header;
 }
 
 .container-fluid img{
-    width: 110px;
-    margin: 0 100px;
+  width: 110px;
+  margin: 0 100px;
 }
 
 .container-fluid a{
-    color: aliceblue;
+  color: aliceblue;
 }
 
 /* MAIN */
 
 .slide{
-    width: 400px;
-    margin: 100px;
+  width: 400px;
+  margin: 100px;
 }
 
 .w-200{
-    height: 500px;
+  height: 500px;
 }
 
 .main{
-    display: flex;
-    justify-content: center;
-        .p{
-                color:#fff;
-                }
+  display: flex;
+  justify-content: center;
+      .p{
+              color:#fff;
+              }
 }
 
 /* FOOTER */
 
 .footer{
-  grid-area: footer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-area: footer;
+grid-area: footer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+grid-area: footer;
 
-        section{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center;
-            width: 20%;
-                       } 
-                       div{
-                        text-align: center;
-                      }
-                      
-                          h3{
-                            font-size: 30px;
-                            color: aliceblue;
-                            margin-bottom: 10px;
-                          }
-                      
-                                 
-                                                                            
+      section{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items:center;
+          width: 20%;
+                     } 
+                     div{
+                      text-align: center;
+                    }
+                    
+                        h3{
+                          font-size: 30px;
+                          color: aliceblue;
+                          margin-bottom: 10px;
+                        }
+                    
+                               
+                                                                          
 }
 
 .footer section div a {
-  margin: 0 5px;
-      i{
-        font-size: 35px;
-        color: aliceblue;
-      }
+margin: 0 5px;
+    i{
+      font-size: 35px;
+      color: aliceblue;
+    }
 }
 
-     
-
-
-  
-  
-  
-  
-  
-  .footer iframe{
-    height: 150px;
-    width: 80%;
-  }
-
-  .parpadeo{
-    animation: parpadeo 1.5s linear infinite;
-  }
-  
-  @keyframes parpadeo {  
-    0% { opacity: 1.0; }
-     50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
+   
 
 
 
-  /* GALERIA */
-.galeria{
-    margin: 40px 0;
-    display: flex;
-    justify-content: center;
-    grid-area: main;
-  }
-  
-  .galeria div img{
-    width: 350px;
-  }
 
 
- /* CONTACTO */
 
-.contact_form{  
-  width: 460px; 
-  height: auto;
-  margin: 40px auto;
-  border-radius: 10px;  
-  padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px;
-  opacity: 70%; 
+
+.footer iframe{
+  height: 150px;
+  width: 80%;
+}
+
+.parpadeo{
+  animation: parpadeo 1.5s linear infinite;
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 
-input{
-  background-color: #fbfbfb; 
-  width: 408px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #0096cd; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-}
-
-
-textarea{
-  background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #0096cd; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
-}
-
-.button-contact{
-  height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
-  text-transform: uppercase;
-  background-color: #0096cd; 
-  border-color: #0096cd; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
-  cursor: pointer;
-}
-
-button p{
-  color: #fff; 
-}
-  
-h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
-  color: #0096cd;
-}
-
-
-h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
-}
-
-
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
-}
-
-
-::-webkit-input-placeholder {
- color: #a8a8a8;
-}
-
-
-::-webkit-textarea-placeholder {
- color: #a8a8a8;
-}
-
-
-.formulario input:focus{
-  outline:0;
-  border: 1px solid #97d848;
-}
-
-
-.formulario textarea:focus{
-  outline:0;
-  border: 1px solid #97d848;
-}
-
-
-
-  /* Taekwon-Do / Historia */
 
 /* GALERIA */
 .galeria{
   margin: 40px 0;
   display: flex;
   justify-content: center;
-      div img{
-        width: 350px;
-      }
+  grid-area: main;
+}
+
+.galeria div img{
+  width: 350px;
+}
+
+
+/* CONTACTO */
+
+.contact_form{  
+width: 460px; 
+height: auto;
+margin: 40px auto;
+border-radius: 10px;  
+padding-top: 30px;
+padding-bottom: 20px;  
+background-color: #fbfbfb; 
+padding-left: 30px;
+opacity: 70%; 
+}
+
+
+input{
+background-color: #fbfbfb; 
+width: 408px; 
+height: 40px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: $color-contacto; 
+margin-top: 10px;  
+padding-left: 10px;
+margin-bottom: 20px; 
+}
+
+
+textarea{
+background-color: #fbfbfb; 
+width: 405px; 
+height: 150px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: $color-contacto; 
+margin-top: 10px;  
+padding-left: 10px;
+margin-bottom: 20px; 
+padding-top: 15px; 
+}
+
+.button-contact{
+height: 45px; 
+padding-left: 5px;
+padding-right: 5px;   
+margin-bottom: 20px; 
+margin-top: 10px;   
+text-transform: uppercase;
+background-color: $color-contacto;  
+border-color: $color-contacto; 
+border-style: solid; 
+border-radius: 10px;  
+width: 420px;   
+cursor: pointer;
+}
+
+button p{
+color: #fff; 
+}
+
+h1{
+font-size: 39px;  
+text-align: letf; 
+padding-bottom: 20px; 
+color: $color-contacto; 
+}
+
+
+h3{
+font-size: 16px; 
+padding-bottom: 30px;
+color: #0e0e0e;   
+}
+
+
+p{
+font-size: 14px; 
+color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+outline:0;
+border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+outline:0;
+border: 1px solid #97d848;
+}
+
+
+
+/* Taekwon-Do / Historia */
+
+/* GALERIA */
+.galeria{
+margin: 40px 0;
+display: flex;
+justify-content: center;
+    div img{
+      width: 350px;
+    }
 }
 
 
@@ -264,100 +266,92 @@ p{
 /* Historia*/
 
 .historia{
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-      h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-        color: #b8ac04e0;
-        margin: 100px 0;
-      }
-          h2{
-            margin: 100px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 35px;
-            color: #b8ac04e0;
-          }
+grid-area: main;
+display: flex;
+flex-direction: column;
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      color: #b8ac04e0;
+      margin: 100px 0;
+    }
+        h2{
+          margin: 100px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 35px;
+          color: #b8ac04e0;
+        }
 }
 
 
 
 .historia div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0;
-    img{
-      width: 300px;
-    }
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50px 0;
+  img{
+    width: 300px;
+  }
 }
 
 
 
 .historia__1{
-  color: aliceblue;
-  font-size:25px;
-  width: 400px;
-  text-align: center;
-  margin: 0 30px;
+color: aliceblue;
+font-size:25px;
+width: 400px;
+text-align: center;
+margin: 0 30px;
 }
 
 
 
 .historia__2{
-  color: aliceblue;
-  font-size:25px;
-  width: 600px;
-  text-align: center;
-  margin: 0 30px;
+color: aliceblue;
+font-size:25px;
+width: 600px;
+text-align: center;
+margin: 0 30px;
 }
 
 .historia-div2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .historia__3{
-  color: aliceblue;
-  font-size:25px;
-  width: 600px;
-  text-align: center;
-  margin: 0 30px;
+color: aliceblue;
+font-size:25px;
+width: 600px;
+text-align: center;
+margin: 0 30px;
 }
 
 
 /* ACERCA DE NOSOTROS */
 
 .main-nosotros{
-  display:flex;
-  justify-content: center;
-      .main-nosotros h3{
-        color: #b8ac04e0;
-        text-align: center;
-      }
-          .main-nosotros .button1{
-            position: absolute;
-            top: 200px;
-          }
+display:flex;
+justify-content: center;
+    .main-nosotros h3{
+      color: #b8ac04e0;
+      text-align: center;
+    }
+        .main-nosotros .button1{
+          position: absolute;
+          top: 200px;
+        }
 }
 
 .w-100{
-  height: 300px;
+height: 300px;
 }
-
-
-
-
-
-
-
-
 
 
 
